@@ -43,18 +43,12 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
-
-
-
 /*
         initUsers();
         UsersAdapter adapter = new UsersAdapter(MainActivity.this,R.layout.item,userList);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(adapter);
 */
-
-
-
     }
 
     public void initUsers(){
@@ -62,6 +56,4 @@ public class MainActivity extends AppCompatActivity {
         userList.add(new User(it1[1],it2[1],it3[1],R.drawable.l2,R.drawable.l2));
         userList.add(new User(it1[2],it2[2],it3[2],R.drawable.l3,R.drawable.l3));
     }
-
-
 }
